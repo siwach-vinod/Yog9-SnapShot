@@ -1,15 +1,12 @@
 version: 0.2
 
 phases:
-        build:
-                commands:
-                        - unset CI
-                        - npm install
-                        - npm run build
-
-        post_build:
-                commands:
-                        - echo "deployed to s3"
+    build:
+        commands:
+            - echo "assignment for 2nd roud"
+    post_build:
+        commands:
+            - echo "deployed to s3"
 artifacts:
-        files:
-                - build/**
+    files:
+        - "**/**"
